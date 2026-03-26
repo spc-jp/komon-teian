@@ -454,6 +454,8 @@ nav {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 .case-card:hover {
   transform: translateY(-5px);
@@ -491,6 +493,7 @@ nav {
   font-size: 0.86rem;
   color: var(--text-muted);
   line-height: 1.9;
+  flex: 1;
 }
 
 .case-result {
@@ -502,6 +505,8 @@ nav {
   font-size: 0.82rem;
   color: var(--gold-light);
   line-height: 1.6;
+  margin-top: auto;
+  padding-top: 20px;
 }
 
 /* ═══ 料金 ═══ */
@@ -790,7 +795,7 @@ footer {
 <section class="hero">
   <div class="hero-stripe"></div>
   <div class="hero-content">
-    <div class="hero-badge">CONFIDENTIAL PROPOSAL 2026</div>
+    <div class="hero-badge">デジタル活用伴走サービス</div>
     <h1>
       AIを使いこなす専門家が<br>
       <span class="highlight">あなたの会社に伴走します</span>
@@ -963,19 +968,19 @@ footer {
         <div class="case-industry">税理士事務所</div>
         <h3>試算表コメントをAIが自動生成、月40時間の業務を削減</h3>
         <p>毎月顧問先に送る試算表コメントを手書きしていた事務所が、AIコメント生成ツールを導入。スタッフが確認・修正するだけに変わった。</p>
-        <div class="case-result">▶ 月次作業 40時間 → 8時間へ</div>
+        <div class="case-result">▶ 月次作業 40時間<br>　→ 8時間へ</div>
       </div>
       <div class="case-card">
         <div class="case-industry">美容室</div>
         <h3>写真1枚からInstagram投稿を自動生成、フォロワーが3ヶ月で2倍</h3>
         <p>SNSは更新したいけど文章が書けないと悩んでいたオーナーが、写真を撮るだけで投稿文が完成するツールを活用。継続投稿が実現した。</p>
-        <div class="case-result">▶ フォロワー 680 → 1,340人（3ヶ月）</div>
+        <div class="case-result">▶ フォロワー 680<br>　→ 1,340人（3ヶ月）</div>
       </div>
       <div class="case-card">
         <div class="case-industry">製造業</div>
         <h3>採用ページとSNSを整備し、半年で応募数が4件から28件へ</h3>
         <p>求人広告に頼るだけだった精密部品メーカーが、WebとInstagram採用アカウントを整備。工場の雰囲気が伝わる投稿で応募者の質も改善。</p>
-        <div class="case-result">▶ 月間応募数 4件 → 28件（半年後）</div>
+        <div class="case-result">▶ 月間応募数 4件<br>　→ 28件（半年後）</div>
       </div>
     </div>
   </div>
@@ -1041,6 +1046,7 @@ footer {
 
 <!-- ═══ CTA ═══ -->
 <div class="cta-section" id="cta">
+  <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.25em; color:rgba(208,169,0,0.7); margin-bottom:20px; position:relative;">デジタル活用伴走サービス　無料相談受付中</div>
   <h2>まず、30分だけ<br>話を聞かせてください</h2>
   <p>
     「うちに合うかわからない」という段階で大丈夫です。<br>
