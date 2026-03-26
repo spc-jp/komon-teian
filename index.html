@@ -68,6 +68,17 @@ nav {
   letter-spacing: 0.18em;
 }
 
+.nav-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.nav-logo-wrap img {
+  height: 38px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.92);
+  padding: 3px 10px;
+}
+
 .nav-links {
   display: flex;
   gap: 28px;
@@ -143,12 +154,13 @@ nav {
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 900;
   line-height: 1.4;
   letter-spacing: 0.02em;
   margin-bottom: 12px;
   animation: fadeInLeft 0.9s 0.1s ease both;
+  white-space: nowrap;
 }
 
 .hero h1 .highlight {
@@ -170,24 +182,26 @@ nav {
 .hero-stats {
   display: flex;
   gap: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   animation: fadeInLeft 1s 0.35s ease both;
   border: 1px solid rgba(208,169,0,0.2);
+  width: fit-content;
 }
 
 .hero-stat {
-  padding: 28px 44px;
+  padding: 24px 36px;
   border-right: 1px solid rgba(208,169,0,0.2);
   text-align: center;
   background: rgba(13,21,48,0.5);
   transition: background 0.3s;
+  white-space: nowrap;
 }
 .hero-stat:last-child { border-right: none; }
 .hero-stat:hover { background: rgba(208,169,0,0.07); }
 
 .hero-stat .num {
   font-family: var(--mono);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: var(--gold);
   line-height: 1;
@@ -195,10 +209,11 @@ nav {
 }
 
 .hero-stat .label {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   margin-top: 8px;
+  white-space: nowrap;
 }
 
 /* 右カラム装飾 */
@@ -745,7 +760,9 @@ footer {
 
 <!-- ナビ -->
 <nav>
-  <div class="nav-logo">SPC — AI活用顧問サービス｜CONFIDENTIAL 2026</div>
+  <div class="nav-logo-wrap">
+    <img src="アプリ用ロゴ.png" alt="Smile Plus Consulting" style="height:38px; display:block;">
+  </div>
   <ul class="nav-links">
     <li><a href="#problem">課題</a></li>
     <li><a href="#service">サービス</a></li>
@@ -771,6 +788,10 @@ footer {
     </p>
     <div class="hero-stats">
       <div class="hero-stat">
+        <span class="num">3<span style="font-size:1.3rem">万〜</span></span>
+        <div class="label">月額顧問料</div>
+      </div>
+      <div class="hero-stat">
         <span class="num">20<span style="font-size:1.3rem">+年</span></span>
         <div class="label">現場支援経験</div>
       </div>
@@ -779,12 +800,8 @@ footer {
         <div class="label">中小企業支援実績</div>
       </div>
       <div class="hero-stat">
-        <span class="num">15<span style="font-size:1.3rem">+本</span></span>
+        <span class="num">50<span style="font-size:1.3rem">+本</span></span>
         <div class="label">AI業務アプリ開発</div>
-      </div>
-      <div class="hero-stat">
-        <span class="num">3<span style="font-size:1.3rem">万〜</span></span>
-        <div class="label">月額顧問料</div>
       </div>
     </div>
   </div>
