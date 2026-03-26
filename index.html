@@ -750,21 +750,89 @@ footer {
 
 /* ═══ レスポンシブ ═══ */
 @media (max-width: 900px) {
-  .hero { padding: 100px 32px 80px; }
+
+  /* ナビ */
+  nav { padding: 0 16px; height: 56px; }
+  .nav-links { display: none; }
+  .nav-logo-wrap div div:first-child { font-size: 14px !important; }
+  .nav-logo-wrap div div:last-child  { font-size: 10px !important; }
+
+  /* ヒーロー */
+  .hero {
+    padding: 80px 20px 60px;
+    align-items: center;
+    text-align: center;
+  }
   .hero-deco { display: none; }
-  .hero-stats { gap: 0; }
-  .hero-stat { padding: 20px 28px; }
-  .section-wrap { padding: 80px 28px; }
+  .hero-badge { font-size: 9px; letter-spacing: 0.12em; padding: 4px 14px; }
+  .hero h1 { font-size: 1.55rem; white-space: normal; }
+  .hero-sub { font-size: 0.88rem; margin-bottom: 36px; }
+
+  /* ヒーロー統計：2×2グリッドに */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: unset;
+    width: 100%;
+  }
+  .hero-stat {
+    padding: 16px 10px;
+    border-right: 1px solid rgba(208,169,0,0.2);
+    border-bottom: 1px solid rgba(208,169,0,0.2);
+    white-space: normal;
+  }
+  .hero-stat:nth-child(2n) { border-right: none; }
+  .hero-stat:nth-child(4),
+  .hero-stat:nth-child(5) { border-bottom: none; }
+  .hero-stat .num { font-size: 1.6rem; }
+  .hero-stat .label { font-size: 0.65rem; }
+
+  /* セクション共通 */
+  .section-wrap { padding: 60px 20px; }
+  .section-title { font-size: 1.45rem; }
+  .section-sub { font-size: 0.88rem; margin-bottom: 40px; }
+
+  /* 課題・事例・料金：1列 */
   .problem-grid,
   .case-grid,
-  .price-grid { grid-template-columns: 1fr; }
-  .strength-grid { grid-template-columns: 1fr; }
-  .service-row { grid-template-columns: 1fr; gap: 12px; }
+  .price-grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* 問題カード */
+  .problem-card { padding: 32px 24px; }
+
+  /* 強み：1列 */
+  .strength-grid { grid-template-columns: 1fr; gap: 16px; }
+  .strength-card { padding: 28px 24px; }
+
+  /* サービス行 */
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 24px 20px;
+  }
+  .service-row h3 { font-size: 0.98rem; }
+  .service-tag { text-align: left; width: fit-content; }
+
+  /* 料金カード */
+  .price-card { padding: 44px 24px 36px; }
   .price-card.featured { transform: none; }
-  .cta-section { padding: 80px 28px; }
-  footer { padding: 32px 28px; flex-direction: column; text-align: center; }
-  nav { padding: 0 20px; }
-  .nav-links { display: none; }
+  .price-amount { font-size: 2.4rem; }
+
+  /* CTA */
+  .cta-section { padding: 60px 20px; }
+  .cta-buttons { flex-direction: column; align-items: center; gap: 14px; }
+  .btn-gold, .btn-outline { width: 100%; max-width: 320px; text-align: center; padding: 18px 20px; }
+
+  /* フッター */
+  footer { padding: 28px 20px; flex-direction: column; text-align: center; gap: 12px; }
+  .footer-logo { font-size: 15px; }
+}
+
+/* さらに小さい画面（375px以下）向け追加調整 */
+@media (max-width: 400px) {
+  .hero h1 { font-size: 1.3rem; }
+  .hero-stat .num { font-size: 1.4rem; }
+  .section-title { font-size: 1.25rem; }
 }
 </style>
 </head>
