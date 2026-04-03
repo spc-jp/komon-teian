@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI活用顧問契約のご提案｜Smile Plus Consulting</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=IBM+Plex+Mono:wght@400;600&family=Raleway:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
   --navy:       #223670;
@@ -507,6 +507,32 @@ nav {
   line-height: 1.6;
   margin-top: auto;
   padding-top: 20px;
+}
+
+/* ═══ 料金申込ボタン ═══ */
+.btn-stripe {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 20px;
+  background: linear-gradient(90deg, #D0A900 0%, #f0c820 50%, #D0A900 100%);
+  color: #0a0a0f;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 4px 20px rgba(208,169,0,0.25);
+}
+.btn-stripe:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+.price-card.featured .btn-stripe {
+  box-shadow: 0 4px 28px rgba(208,169,0,0.4);
 }
 
 /* ═══ 料金 ═══ */
@@ -1077,6 +1103,7 @@ footer {
           <li>AIツール活用サポート</li>
           <li>みっけシリーズ1本利用権</li>
         </ul>
+        <a href="https://buy.stripe.com/00w14m0Yierz6SP4oIcV20m" target="_blank" class="btn-stripe">このプランで申し込む</a>
       </div>
       <div class="price-card featured">
         <div class="featured-badge">RECOMMENDED</div>
@@ -1092,6 +1119,7 @@ footer {
           <li>みっけシリーズ3本利用権</li>
           <li>月次レポート提供</li>
         </ul>
+        <a href="https://buy.stripe.com/cNi8wOdL41ENcd9g7qcV20n" target="_blank" class="btn-stripe">このプランで申し込む</a>
       </div>
       <div class="price-card">
         <div class="plan-name">PREMIUM</div>
@@ -1107,6 +1135,7 @@ footer {
           <li>四半期戦略レポート</li>
           <li>スタッフ向け勉強会（年2回）</li>
         </ul>
+        <a href="https://buy.stripe.com/4gM7sKgXg0AJ90Xf3mcV20o" target="_blank" class="btn-stripe">このプランで申し込む</a>
       </div>
     </div>
   </div>
